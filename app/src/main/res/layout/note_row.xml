@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/note_row_color"
+    android:layout_height="wrap_content">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="12dp"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rowTitle"
+           android:text="Title"
+           android:textStyle="bold"
+           android:textSize="24sp"
+           ></TextView>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rowTime"
+           android:layout_below="@+id/rowTitle"
+           android:layout_alignParentRight="true"
+           android:textSize="18sp"
+           android:text="Time"
+           ></TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/rowText"
+           android:layout_below="@id/rowTime"
+           android:text="Text"
+           android:textSize="20sp"></TextView>
+   </RelativeLayout>
+
+</LinearLayout>
