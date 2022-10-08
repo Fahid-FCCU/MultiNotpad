@@ -46,6 +46,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /*
+    public class JSONAsyn extends AsyncTask<Void, Void, Note> {
+
+        @Override
+        protected Note doInBackground(Void... voids) {
+
+            Log.d(TAG, "loadFile: Loading JSON File");
+            try {
+                InputStream is = getApplicationContext().openFileInput(getString(R.string.file_name));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+
+                StringBuilder sb = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line);
+                }
+
+                JSONObject jsonObject = new JSONObject(sb.toString());
+                String title = jsonObject.getString("title");
+                String text = jsonObject.getString("text");
+                return new Note(title,text);
+
+            } catch (FileNotFoundException e) {
+                Toast.makeText(getApplicationContext(), getString(R.string.no_file), Toast.LENGTH_SHORT).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+    }*/
 
 
 

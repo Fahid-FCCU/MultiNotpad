@@ -30,16 +30,16 @@ public class Note {
     public void setText(String text) {
         this.text = text;
     }
+/*
     @NonNull
     public String toJSON() {
 
-        try {
 
+        try {
             StringWriter sw = new StringWriter();
             JsonWriter jsonWriter = new JsonWriter(sw);
             jsonWriter.setIndent("  ");
             jsonWriter.beginObject();
-
             jsonWriter.name("title").value(getTitle());
             jsonWriter.name("text").value(getText());
             jsonWriter.endObject();
@@ -50,6 +50,7 @@ public class Note {
         }
         return "";
     }
+*/
 
     @Override
     public String toString() {
