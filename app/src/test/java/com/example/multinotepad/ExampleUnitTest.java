@@ -1,4 +1,4 @@
-package com.example.multinotpad;
+package com.example.multinotepad;
 
 import org.junit.Test;
 

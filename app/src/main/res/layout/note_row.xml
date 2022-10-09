@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/note_row_color"
+    android:layout_margin="4dp"
+    android:elevation="6dp"
+    app:cardBackgroundColor="#A278EF"
     android:layout_height="wrap_content">
 
    <RelativeLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:padding="12dp"
+       android:padding="10dp"
        >
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/rowTitle"
-           android:text="Title"
-           android:textStyle="bold"
-           android:textSize="24sp"
-           ></TextView>
-       <TextView
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/rowTime"
-           android:layout_below="@+id/rowTitle"
-           android:layout_alignParentRight="true"
-           android:textSize="18sp"
-           android:text="Time"
-           ></TextView>
 
        <TextView
+           android:id="@+id/rowTitle"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
+           android:text="Title"
+           android:textSize="24sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"></TextView>
+
+       <TextView
+           android:id="@+id/rowTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/rowTitle"
+           android:layout_alignParentRight="true"
+           android:text="Time"
+           android:textColor="@color/black"
+           android:textSize="16sp"></TextView>
+
+       <TextView
            android:id="@+id/rowText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
            android:layout_below="@id/rowTime"
+           android:layout_marginTop="8dp"
            android:text="Text"
+           android:textColor="@color/black"
            android:textSize="20sp"></TextView>
    </RelativeLayout>
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>

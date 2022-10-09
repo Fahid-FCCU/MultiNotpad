@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="16dp"
     android:background="@color/background_color"
     tools:context=".EditActivity">
     <EditText
@@ -14,19 +14,22 @@
         android:layout_height="40dp"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:inputType="textCapWords"
         android:background="@color/white"
         android:hint="Enter Title here"
         ></EditText>
         <EditText
+            android:padding="8dp"
             android:id="@+id/etTextNote"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:maxLines="30"
             android:scrollbars="vertical"
-            android:maxLength="80"
             android:hint="Enter Note "
             android:gravity="top"
+            android:inputType="textMultiLine"
             android:textSize="18sp"
             android:background="@color/white"
             ></EditText>
